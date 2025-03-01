@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background: #004085;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+
+    height: 300px;
+
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.slides {
+    display: flex;
+    width: 300%;
+
+    height: 100%;
+    animation: slideAnimation 25s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.cardcontent {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cardcontent h3 {
+    color: #004085;
+    margin-bottom: 10px;
+}
+
+.cardcontent p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.cardcontent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cardcontent ul li {
+    background: url('checkmark.png') no-repeat left center;
+    background-size: 16px;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+
+footer {
+    text-align: center;
+    background: #004085;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .cardcontent {
+        text-align: center;
+    }
+}
