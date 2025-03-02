@@ -7,19 +7,28 @@ body {
 
 header {
     text-align: center;
+
     background: #004085;
     color: white;
     padding: 15px;
 }
 
+.container h2 {
+    text-align: left;
+    color: #004085;
+    max-width: 900px;
+    margin: 10px;
+    padding: 20px;
+}
+
 .container {
+    display: block;
     color: #004085;
     max-width: 900px;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
-
 
 .card {
     background: white;
@@ -32,31 +41,26 @@ header {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.slideshow-container {
+.slideshow {
     position: relative;
     width: 100%;
     max-width: 500px;
-
     height: 300px;
-
     overflow: hidden;
     border-radius: 10px;
 }
 
-
 .slides {
     display: flex;
     width: 300%;
-
     height: 100%;
-    animation: slideAnimation 25s infinite;
+    animation: slideAnimation 12s infinite linear;
+
 }
 
 .slides img {
@@ -70,23 +74,18 @@ header {
         transform: translateX(0);
     }
 
-    25% {
+    33.33% {
         transform: translateX(-100%);
     }
 
-    50% {
+    66.66% {
         transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-100%);
     }
 
     100% {
         transform: translateX(0);
     }
 }
-
 
 .cardcontent {
     flex: 1;
@@ -105,20 +104,17 @@ header {
     margin-bottom: 10px;
 }
 
-
 .cardcontent ul {
     list-style: none;
     padding: 0;
 }
 
 .cardcontent ul li {
-
     padding-left: 25px;
     margin-bottom: 5px;
     color: #555;
     font-size: 14px;
 }
-
 
 footer {
     text-align: center;
@@ -127,7 +123,6 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-
 
 @media (max-width: 768px) {
     .card {
