@@ -112,8 +112,7 @@ header {
 }
 
 .cardcontent ul li {
-    background: url('checkmark.png') no-repeat left center;
-    background-size: 16px;
+
     padding-left: 25px;
     margin-bottom: 5px;
     color: #555;
