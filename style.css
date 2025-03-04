@@ -141,3 +141,60 @@ footer {
         text-align: center;
     }
 }
+
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #004085;
+    color: white;
+}
+
+
+@media (max-width: 992px) {
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        font-size: 11px;
+    }
+}
