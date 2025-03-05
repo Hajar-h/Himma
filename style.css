@@ -2,43 +2,267 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #004d40, #00796b);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
 }
 
 header {
-    text-align: center;
-
-    background: #004085;
-    color: white;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
-.container h2 {
-    text-align: left;
-    color: #004085;
-    max-width: 900px;
-    margin: 10px;
-    padding: 20px;
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Welcome{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 20px;
+    color:#ffffff;
+    text-decoration: solid;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.title{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.top-slider {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    margin: 7px;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.marquee img {
+    width: 100px;
+    height: auto;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.marquee img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .container {
-    display: block;
-    color: #004085;
-    max-width: 900px;
-    margin: auto;
+    padding-top: 8px;
+    text-align: center;
+
+}
+
+section {
     padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+.progress-bar {
+    width: 70%;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 70%;
+    height: 100%;
+    background: #ffcc00;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 15px;
+    animation: progressAnim 4s ease-in-out;
+}
+
+@keyframes progressAnim {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+.content {
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: #ffffff;
     text-align: center;
 }
 
-.card {
-    background: white;
+#summary{
+    font-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+h4 {
+    font-size: 22px;
+    color: #ffeb3b;
+}
+
+.messages {
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 20px auto;
+
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.message{
+    display: flex;
+    justify-content:space-around;
     align-items: center;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.message-list {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.message img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.message-list:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.region-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.region {
+    padding: 15px 25px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.region:hover {
+    background: #ffeb3b;
+    transform: translateY(-5px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
@@ -47,7 +271,6 @@ header {
 }
 
 .slideshow {
-    position: relative;
     width: 100%;
     max-width: 500px;
     height: 300px;
@@ -89,14 +312,10 @@ header {
 
 .cardcontent {
     flex: 1;
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
 }
 
-.cardcontent h3 {
-    color: #004085;
-    margin-bottom: 10px;
-}
 
 .cardcontent p {
     font-size: 14px;
@@ -109,18 +328,11 @@ header {
     padding: 0;
 }
 
-.cardcontent ul li {
-    padding-left: 25px;
-    margin-bottom: 5px;
-    color: #555;
-    font-size: 14px;
-}
 
 footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
     text-align: center;
-    background: #004085;
-    color: white;
-    padding: 10px;
     margin-top: 20px;
 }
 
@@ -159,7 +371,7 @@ td {
 }
 
 th {
-    background-color: #004085;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
 }
 
