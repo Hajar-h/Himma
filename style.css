@@ -624,6 +624,7 @@ th {
         width: 200px;
 
     }
+
 }
 
 
@@ -642,6 +643,7 @@ th {
         margin: 10px 0;
         font-size: 14px;
     }
+    
 }
 
 /*Sidebar Part*/
@@ -736,6 +738,7 @@ th {
     border-radius: 15px;
     backdrop-filter: blur(10px);
     text-align: left; 
+  
 }
 
 
@@ -797,7 +800,7 @@ th {
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 3px;
     background: transparent;
-    color: #ffffff;
+    color: #000000;
 }
 .contact-container textarea {
     resize: vertical;
