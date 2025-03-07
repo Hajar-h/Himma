@@ -18,6 +18,36 @@
             </ul>
         </nav>
     </header>
+  <!-- Sidebar Part -->
+
+<button id="sidebarToggle" class="menu-btn">
+    <i class="fa fa-bars"></i> Menu
+  </button>
+  
+  <nav id="customSidebar" class="sidebar">
+    <button id="closeSidebar" class="close-btn">&times;</button>
+  
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+    </div>
+    <ul class="list-unstyled components">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="central-region.html">Central Region</a></li>
+      <li><a href="southern-region.html">Southern Region</a></li>
+      <li><a href="western-region.html">Western Region</a></li>
+      <li><a href="eastern-region.html">Eastern Region</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+ <!-- End of Sidebar  -->
+
+
+    <section class="content">
+        <h1 class="Welcome">Welcome to HIMMA</h1>
+        <p>Explore the projects of Vision 2030 across Saudi Arabia.</p>
+    </section>
 
     <section class="slider">
         <div class="top-slider">
@@ -34,10 +64,7 @@
     </section>
     
     <div class="container">
-        <section class="content">
-            <h1 class="Welcome">Welcome to HIMMA</h1>
-            <p>Explore the projects of Vision 2030 across Saudi Arabia.</p>
-        </section>
+
 
         <section class="progress">
             <h2 class="progress-title">A Future of Innovation and Prosperity</h2>
@@ -47,17 +74,7 @@
                 </div>
         </section>
 
-        <section class="regions">
-            <h2>Explore Key Projects Across Saudi Regions</h2>
-            <div class="region-list">
-                <a href="central-region.html" class="region">Central Region</a>
-                <a href="southern-region.html" class="region">Southern Region</a>
-            </div>
-            <div class="region-list">
-                <a href="western-region.html" class="region">Western Region</a>
-                <a href="eastern-region.html" class="region">Eastern Region</a>
-            </div>
-        </section>
+
 
         <section class="content">
             <h2 class="title">Saudi Vision 2030</h2>
@@ -109,10 +126,33 @@
                 </div>
             </div>
         </section>
+
+        <section class="regions">
+            <h2>Explore Key Projects Across Saudi Regions</h2>
+            <div class="region-list">
+                <a href="central-region.html" class="region">Central Region</a>
+                <a href="southern-region.html" class="region">Southern Region</a>
+            </div>
+            <div class="region-list">
+                <a href="western-region.html" class="region">Western Region</a>
+                <a href="eastern-region.html" class="region">Eastern Region</a>
+            </div>
+        </section>
     </div>
 
     <footer>
         <p>&copy; 2025 Himma - All Rights Reserved</p>
     </footer>
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+          document.getElementById('customSidebar').classList.add('active');
+        });
+      
+        document.getElementById('closeSidebar').addEventListener('click', function() {
+          document.getElementById('customSidebar').classList.remove('active');
+        });
+      </script>
+      
+
 </body>
 </html>
