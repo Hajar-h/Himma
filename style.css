@@ -2,28 +2,68 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #004d40, #00796b);
+    background: #2f5150;
     color: white;
     text-align: center;
     overflow-x: hidden;
 }
 
+/*Header Part*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #1d3434;
     top: 0;
     left: 0;
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
+header nav{
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width:100%;
 
-header h1 {
-    font-size: 28px;
-    font-weight: bold;
 }
+header nav ul {
+display: flex;
+justify-content: space-between; 
+align-items: center;
+width:100%;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+transition: 0.3s;
+}
+nav ul li.headeritem{
+flex:1 1 10px;
+text-align: center;
+
+
+}
+nav ul li img {
+border-radius: 30px;
+
+}
+
+nav ul li a:hover {
+color: #ffcc00;
+}
+
 
 .Welcome{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -49,27 +89,7 @@ p{
     font-size: 100%;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
 
 .top-slider {
     width: 100%;
@@ -85,7 +105,8 @@ nav ul li a:hover {
 }
 
 .marquee img {
-    width: 500px;
+    width: 100px;
+    height: auto;
     margin: 0 5px;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -140,11 +161,11 @@ section:hover {
 .progress-fill {
     width: 70%;
     height: 100%;
-    background: #ffcc00;
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     line-height: 25px;
     font-weight: bold;
-    color: #333;
+    color: #969191;
     border-radius: 15px;
     animation: progressAnim 4s ease-in-out;
 }
@@ -186,12 +207,12 @@ li {
 
 li:hover {
     transform: scale(1.02);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 h4 {
     font-size: 22px;
-    color: #ffeb3b;
+    color: #969191;
 }
 
 .messages {
@@ -242,8 +263,8 @@ h4 {
 
 .region {
     padding: 15px 25px;
-    background: #ffcc00;
-    color: black;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
     font-weight: bold;
     text-decoration: none;
     border-radius: 10px;
@@ -251,7 +272,7 @@ h4 {
 }
 
 .region:hover {
-    background: #ffeb3b;
+    background: rgba(0, 0, 0, 0.8);
     transform: translateY(-5px);
 }
 
@@ -392,10 +413,22 @@ th {
     table {
         font-size: 12px;
     }
+    .content{
+    margin-top:50px;
+    }
 
     th,
     td {
         padding: 8px;
+    }
+
+    .menu-btn{
+        margin:50px;
+
+    }
+    .sidebar{
+        width: 200px;
+        
     }
 }
 
@@ -409,6 +442,10 @@ th {
     td {
         padding: 5px;
         font-size: 11px;
+    }
+    .menu-btn{
+        margin:10px 0;
+        font-size: 14px;
     }
 }
 
@@ -424,13 +461,10 @@ th {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    float: left;  
+    margin: 0;  
   }
-  .menu-btn {
-    display: inline-block;  
-    margin: 0;           
-    float: left;           
-  }
-  
+
   
 
   .menu-btn i {
@@ -493,4 +527,5 @@ th {
   .sidebar.active {
     left: 0;
   }
+
   
