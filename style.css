@@ -20,71 +20,75 @@ header {
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
-header nav{
-    
+
+header nav {
+
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
 
 }
+
 header nav ul {
-display: flex;
-justify-content: space-between; 
-align-items: center;
-width:100%;
-list-style: none;
-margin: 0;
-padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 
 nav ul li {
-margin: 0 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-color: white;
-text-decoration: none;
-font-size: 18px;
-transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
 }
-nav ul li.headeritem{
-flex:1 1 10px;
-text-align: center;
+
+nav ul li.headeritem {
+    flex: 1 1 10px;
+    text-align: center;
 
 
 }
+
 nav ul li img {
-border-radius: 30px;
+    border-radius: 30px;
 
 }
 
 nav ul li a:hover {
-color: #ffcc00;
+    color: #ffcc00;
 }
 
 
-.Welcome{
+.Welcome {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     margin: 20px;
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: solid;
     font-size: 60px;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.title{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 
-p{
+p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 100%;
 }
@@ -121,6 +125,7 @@ p{
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -133,8 +138,8 @@ p{
 }
 
 section {
-    width: 90%;         
-    max-width: 800px;  
+    width: 90%;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -174,10 +179,12 @@ section:hover {
     from {
         width: 0%;
     }
+
     to {
         width: 70%;
     }
 }
+
 .content {
     padding: 20px;
     margin: 20px auto;
@@ -188,7 +195,7 @@ section:hover {
     text-align: center;
 }
 
-#summary{
+#summary {
     font-size: 100%;
 }
 
@@ -226,11 +233,13 @@ h4 {
     gap: 20px;
     flex-wrap: wrap;
 }
-.message{
+
+.message {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
+
 .message-list {
     background: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -294,10 +303,12 @@ h4 {
 
 .slideshow {
     width: 100%;
-    max-width: 500px;
-    height: 300px;
+    max-width: 900px;
+    height: 450px;
     overflow: hidden;
     border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .slides {
@@ -305,14 +316,17 @@ h4 {
     width: 300%;
     height: 100%;
     animation: slideAnimation 12s infinite linear;
-
 }
 
 .slides img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    display: block;
+
 }
+
 
 @keyframes slideAnimation {
     0% {
@@ -331,6 +345,52 @@ h4 {
         transform: translateX(0);
     }
 }
+
+
+@media (max-width: 992px) {
+    .slideshow {
+        height: 350px;
+
+    }
+
+    .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .slideshow {
+        height: 300px;
+
+    }
+
+    .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .slideshow {
+        height: 250px;
+
+    }
+
+    .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+
 
 .cardcontent {
     flex: 1;
@@ -413,8 +473,9 @@ th {
     table {
         font-size: 12px;
     }
-    .content{
-    margin-top:50px;
+
+    .content {
+        margin-top: 50px;
     }
 
     th,
@@ -422,13 +483,14 @@ th {
         padding: 8px;
     }
 
-    .menu-btn{
-        margin:50px;
+    .menu-btn {
+        margin: 50px;
 
     }
-    .sidebar{
+
+    .sidebar {
         width: 200px;
-        
+
     }
 }
 
@@ -443,8 +505,9 @@ th {
         padding: 5px;
         font-size: 11px;
     }
-    .menu-btn{
-        margin:10px 0;
+
+    .menu-btn {
+        margin: 10px 0;
         font-size: 14px;
     }
 }
@@ -452,45 +515,45 @@ th {
 /*Sidebar Part*/
 
 .menu-btn {
-    display: inline-flex;        
+    display: inline-flex;
     align-items: center;
-    background-color: #444343;   
+    background-color: #444343;
     color: #fff;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    float: left;  
-    margin: 0;  
-  }
+    float: left;
+    margin: 0;
+}
 
-  
 
-  .menu-btn i {
+
+.menu-btn i {
     margin-right: 8px;
-  }
-  
+}
 
-  .menu-btn:hover {
-    background-color: #848484;   
-  }
-  
 
-  .sidebar {
+.menu-btn:hover {
+    background-color: #848484;
+}
+
+
+.sidebar {
     position: fixed;
     top: 0;
-    left: -250px;            
+    left: -250px;
     width: 250px;
     height: 100%;
-    background: #333;        
+    background: #333;
     color: #fff;
     transition: left 0.3s ease;
-    z-index: 1050;          
-  }
-  
+    z-index: 1050;
+}
 
-  .close-btn {
+
+.close-btn {
     background: none;
     border: none;
     color: #fff;
@@ -498,34 +561,35 @@ th {
     float: right;
     margin: 10px;
     cursor: pointer;
-  }
-  
-  .sidebar-header {
-    padding: 15px;
-    background: #444;        
-  }
-  
+}
 
-  .sidebar ul.components {
+.sidebar-header {
+    padding: 15px;
+    background: #444;
+}
+
+
+.sidebar ul.components {
     padding: 20px 0;
-  }
-  .sidebar ul.components li {
+}
+
+.sidebar ul.components li {
     padding: 10px 20px;
-  }
-  .sidebar ul.components li a {
+}
+
+.sidebar ul.components li a {
     color: #ddd;
     text-decoration: none;
     display: block;
     font-size: 16px;
-  }
-  .sidebar ul.components li a:hover {
+}
+
+.sidebar ul.components li a:hover {
     background: #555;
     color: #fff;
-  }
-  
+}
 
-  .sidebar.active {
+
+.sidebar.active {
     left: 0;
-  }
-
-  
+}
