@@ -875,3 +875,109 @@ th {
     margin-bottom: 20px;
   }
   
+  /* main page */
+  .download-brochure-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #004d40, #00796b);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .download-brochure-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .download-brochure-header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .download-brochure-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  
+  .download-brochure-info {
+    flex: 1 1 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .download-brochure-info p {
+    margin-bottom: 15px;
+  }
+  
+  .download-brochure-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .download-brochure-info ul li {
+    margin: 10px 0;
+  }
+  
+  .download-brochure-form {
+    flex: 1 1 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .download-brochure-signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .download-brochure-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .download-brochure-form-group label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .download-brochure-form-group label span {
+    color: #ffffff;
+  }
+  
+  .download-brochure-form-group input,
+  .download-brochure-form-group textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: transparent;
+    color: #fff; 
+  }
+  
+  .download-brochure-btn-submit {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .download-brochure-btn-submit:hover {
+    background: #ffeb3b;
+  }
+  
