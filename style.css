@@ -10,6 +10,7 @@ body {
 
 /*Header Part*/
 header {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +275,7 @@ h4 {
 
 .region-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
@@ -298,6 +299,8 @@ h4 {
 .region:hover {
     background: rgba(0, 0, 0, 0.8);
     transform: translateY(-5px);
+    color: #ffcc00;
+
 }
 
 .contact-container {
@@ -669,6 +672,8 @@ th {
     margin: 0;
     position: relative;
     z-index:10;
+    border-bottom-right-radius: 15px;
+
 }
 
 
@@ -731,8 +736,7 @@ th {
 }
 
 .sidebar ul.components li a:hover {
-    background: #555;
-    color: #fff;
+    color: #ffcc00;
 }
 
 
