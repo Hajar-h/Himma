@@ -499,48 +499,7 @@ h4 {
 }
 
 
-@media (max-width: 992px) {
-    .slideshow {
-        height: 350px;
 
-    }
-
-    .slides img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-}
-
-
-@media (max-width: 768px) {
-    .slideshow {
-        height: 300px;
-
-    }
-
-    .slides img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-}
-
-@media (max-width: 576px) {
-    .slideshow {
-        height: 250px;
-
-    }
-
-    .slides img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-}
 
 
 
@@ -570,23 +529,7 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
 
-    .card img {
-        margin-bottom: 10px;
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .cardcontent {
-        text-align: center;
-    }
-}
 
 
 table {
@@ -610,61 +553,11 @@ th {
 }
 
 
-@media (max-width: 992px) {
-    table {
-        font-size: 14px;
-    }
-
-    th,
-    td {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    table {
-        font-size: 12px;
-    }
-
-    .content {
-        margin-top: 50px;
-    }
-
-    th,
-    td {
-        padding: 8px;
-    }
-
-    .menu-btn {
-        margin: 50px;
-
-    }
-
-    .sidebar {
-        width: 200px;
-
-    }
-
-}
 
 
-@media (max-width: 576px) {
-    table {
-        font-size: 14px;
-    }
 
-    th,
-    td {
-        padding: 5px;
-        font-size: 11px;
-    }
 
-    .menu-btn {
-        margin: 10px 0;
-        font-size: 14px;
-    }
 
-}
 
 /*Sidebar Part*/
 
@@ -1016,6 +909,170 @@ th {
 .download-brochure-btn-submit:hover {
     background: #ffeb3b;
 }
+
+
+/* Media tags*/
+
+
+@media (max-width: 992px) {
+    .slideshow {
+        height: 350px;
+
+    }
+
+    .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .slideshow {
+        height: 300px;
+
+    }
+
+    .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .messages {
+        font-size: 12px;
+        padding-top: 1px
+    }
+
+    .message-list {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .message img {
+        width: 90%;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .cardcontent {
+        text-align: center;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .content {
+        margin-top: 50px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .menu-btn {
+        margin: 0px;
+
+
+    }
+
+    .sidebar {
+        width: 200px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 5px;
+    }
+
+    .Welcome {
+        font-size: 40px;
+        margin: 5px 0;
+    }
+
+    .slideshow {
+        height: 250px;
+
+    }
+
+    .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .messages {
+        font-size: 12px;
+        padding-top: 1px
+    }
+
+    .message-list {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .message img {
+        width: 90%;
+    }
+
+    .title {
+        margin-top: 1px;
+    }
+
+    .cardcontent {
+        margin-right: 10px;
+    }
+
+    table {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
+    .menu-btn {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+}
+
 
 .error-message {
     color: red;
