@@ -94,12 +94,14 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 100%;
     color: #fff !important;
-    
+
 }
-body ul, body ul li {
+
+body ul,
+body ul li {
     color: #fff !important;
-  }
-  
+}
+
 
 
 
@@ -259,8 +261,9 @@ h4 {
     text-align: center;
     transition: 0.3s;
 }
-.message-list h3{
-    font-size:100%;
+
+.message-list h3 {
+    font-size: 100%;
 }
 
 .message img {
@@ -307,10 +310,10 @@ h4 {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    text-align: left; 
+    text-align: left;
 }
 
 .contact-container h1 {
@@ -333,13 +336,15 @@ h4 {
 }
 
 .contact-container .form-section {
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 15px;
 }
+
 .contact-container .form-section:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
 }
+
 .contact-container .form-section h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
@@ -349,6 +354,7 @@ h4 {
 .contact-container .form-group {
     margin-bottom: 15px;
 }
+
 .contact-container label {
     display: block;
     margin-bottom: 5px;
@@ -363,11 +369,12 @@ h4 {
     width: 100%;
     padding: 8px;
     font-size: 1em;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
     background: transparent;
     color: #ffffff;
 }
+
 .contact-container textarea {
     resize: vertical;
     min-height: 100px;
@@ -375,7 +382,7 @@ h4 {
 
 .contact-container .note {
     font-size: 0.9em;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     margin-top: 5px;
 }
 
@@ -384,9 +391,10 @@ h4 {
     align-items: center;
     gap: 10px;
 }
+
 .contact-container .btn-clear {
     padding: 8px 12px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -410,18 +418,20 @@ h4 {
     font-size: 1em;
     transition: background-color 0.3s ease;
 }
+
 .contact-container .submit-btn:hover {
     background: #e6b800;
 }
 
 .contact-container .privacy {
     font-size: 0.8em;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 15px;
     text-align: center;
 }
+
 .contact-container .privacy a {
     color: #ffcc00;
     text-decoration: none;
@@ -564,7 +574,7 @@ th {
     float: left;
     margin: 0;
     position: relative;
-    z-index:10;
+    z-index: 10;
     border-bottom-right-radius: 15px;
 
 }
@@ -637,17 +647,17 @@ th {
     left: 0;
 }
 
- 
+
 
 .contact-container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.1);  
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    text-align: left; 
-  
+    text-align: left;
+
 }
 
 
@@ -674,13 +684,15 @@ th {
 
 
 .contact-container .form-section {
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 15px;
 }
+
 .contact-container .form-section:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
 }
+
 .contact-container .form-section h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
@@ -691,6 +703,7 @@ th {
 .contact-container .form-group {
     margin-bottom: 15px;
 }
+
 .contact-container label {
     display: block;
     margin-bottom: 5px;
@@ -706,11 +719,12 @@ th {
     width: 100%;
     padding: 8px;
     font-size: 1em;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
     background: transparent;
     color: #000000;
 }
+
 .contact-container textarea {
     resize: vertical;
     min-height: 100px;
@@ -719,7 +733,7 @@ th {
 
 .contact-container .note {
     font-size: 0.9em;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     margin-top: 5px;
 }
 
@@ -729,9 +743,10 @@ th {
     align-items: center;
     gap: 10px;
 }
+
 .contact-container .btn-clear {
     padding: 8px 12px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -757,6 +772,7 @@ th {
     font-size: 1em;
     transition: background-color 0.3s ease;
 }
+
 .contact-container .submit-btn:hover {
     background: #e6b800;
 }
@@ -764,12 +780,13 @@ th {
 
 .contact-container .privacy {
     font-size: 0.8em;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 15px;
     text-align: center;
 }
+
 .contact-container .privacy a {
     color: #ffcc00;
     text-decoration: none;
@@ -777,107 +794,107 @@ th {
 
 
 .carousel-item img {
-    object-fit: cover;  
-    max-height: 400px;  
+    object-fit: cover;
+    max-height: 400px;
     width: 100%;
     display: block;
-  }
-  
-  .card .carousel {
+}
+
+.card .carousel {
     margin-bottom: 20px;
-  }
-  
-  /* main page */
-  .download-brochure-page {
+}
+
+/* main page */
+.download-brochure-page {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #004d40, #00796b);
     color: #ffffff;
     min-height: 100vh;
-  }
-  
-  .download-brochure-header {
+}
+
+.download-brochure-header {
     text-align: center;
     padding: 40px 20px;
     background: rgba(0, 0, 0, 0.6);
-  }
-  
-  .download-brochure-header h1 {
+}
+
+.download-brochure-header h1 {
     margin: 0;
     font-size: 24px;
-  }
-  
-  .download-brochure-container {
+}
+
+.download-brochure-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
     gap: 20px;
-  }
-  
-  .download-brochure-info {
+}
+
+.download-brochure-info {
     flex: 1 1 300px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
-  }
-  
-  .download-brochure-info p {
+}
+
+.download-brochure-info p {
     margin-bottom: 15px;
-  }
-  
-  .download-brochure-info ul {
+}
+
+.download-brochure-info ul {
     list-style-type: disc;
     margin-left: 20px;
-  }
-  
-  .download-brochure-info ul li {
+}
+
+.download-brochure-info ul li {
     margin: 10px 0;
-  }
-  
-  .download-brochure-form {
+}
+
+.download-brochure-form {
     flex: 1 1 400px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
-  }
-  
-  .download-brochure-signup-form {
+}
+
+.download-brochure-signup-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .download-brochure-form-group {
+}
+
+.download-brochure-form-group {
     display: flex;
     flex-direction: column;
-  }
-  
-  .download-brochure-form-group label {
+}
+
+.download-brochure-form-group label {
     text-align: left;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .download-brochure-form-group label span {
+}
+
+.download-brochure-form-group label span {
     color: #ffffff;
-  }
-  
-  .download-brochure-form-group input,
-  .download-brochure-form-group textarea {
+}
+
+.download-brochure-form-group input,
+.download-brochure-form-group textarea {
     padding: 8px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
     outline: none;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     background: transparent;
-    color: #fff; 
-  }
-  
-  .download-brochure-btn-submit {
+    color: #fff;
+}
+
+.download-brochure-btn-submit {
     background: #ffcc00;
     color: #333;
     border: none;
@@ -887,17 +904,17 @@ th {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
-  }
-  
-  .download-brochure-btn-submit:hover {
+}
+
+.download-brochure-btn-submit:hover {
     background: #ffeb3b;
-  }
+}
 
 
 /* Media tags*/
 
 
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
     .slideshow {
         height: 350px;
 
@@ -909,6 +926,7 @@ th {
         object-fit: cover;
 
     }
+
     table {
         font-size: 14px;
     }
@@ -933,19 +951,22 @@ th {
         object-fit: cover;
 
     }
+
     .messages {
-        font-size: 12px; 
-        padding-top:1px
+        font-size: 12px;
+        padding-top: 1px
     }
 
     .message-list {
-        width: 100%; 
-        padding: 10px; 
-        margin:5px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
     }
-    .message img{
-        width:90%;
+
+    .message img {
+        width: 90%;
     }
+
     .card {
         flex-direction: column;
         text-align: center;
@@ -961,6 +982,7 @@ th {
     .cardcontent {
         text-align: center;
     }
+
     table {
         font-size: 12px;
     }
@@ -975,8 +997,8 @@ th {
     }
 
     .menu-btn {
-        margin: 0px ;
- 
+        margin: 0px;
+
 
     }
 
@@ -988,12 +1010,14 @@ th {
 
 @media (max-width: 576px) {
     header {
-        padding: 5px; 
+        padding: 5px;
     }
+
     .Welcome {
-        font-size: 40px; 
-        margin: 5px 0; 
+        font-size: 40px;
+        margin: 5px 0;
     }
+
     .slideshow {
         height: 250px;
 
@@ -1005,29 +1029,33 @@ th {
         object-fit: cover;
 
     }
+
     .messages {
-        font-size: 12px; 
-        padding-top:1px
+        font-size: 12px;
+        padding-top: 1px
     }
 
     .message-list {
-        width: 100%; 
-        padding: 10px; 
-        margin:5px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
     }
-    .message img{
-        width:90%;
+
+    .message img {
+        width: 90%;
     }
-    .title{
-        margin-top:1px;
+
+    .title {
+        margin-top: 1px;
     }
-    .cardcontent{
-        margin-right:10px;
+
+    .cardcontent {
+        margin-right: 10px;
     }
 
     table {
         font-size: 16px;
-        width:100%;
+        width: 100%;
     }
 
     th,
@@ -1035,13 +1063,20 @@ th {
         padding: 8px;
         font-size: 14px;
     }
-    
+
 
     .menu-btn {
         margin: 0;
         font-size: 14px;
     }
 
-    
+
 }
-  
+
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+    display: block;
+}
