@@ -56,6 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
             message.style.border = "2px solid green";
         }
 
+        const company = document.getElementById("company");
+        if (!/^[A-Za-z0-9\s]{2,50}$/.test(company.value.trim())) {
+            showError("companyError", "Company name must be 2–50 characters, letters and numbers only.");
+            company.style.border = "2px solid red";
+        } else {
+            company.style.border = "2px solid green";
+        }
+
 
         const notARobot = document.getElementById("notARobot");
         if (!notARobot.checked) {
