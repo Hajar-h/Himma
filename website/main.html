@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himma Main Form </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/2030icon.png">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+
+        <li class="headeritem"><a href="aboutus.html">About Us</a></li>
+        <li><a href="index.html"><img src="assets/HimmaLogo.png" alt="Himma logo" height=50></a></li>
+        <li class="headeritem"><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Sidebar Part -->
+  <button id="sidebarToggle" class="menu-btn">
+    <i class="fa fa-bars"></i> Menu
+  </button>
+
+  <nav id="customSidebar" class="sidebar">
+    <button id="closeSidebar" class="close-btn">&times;</button>
+
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+    </div>
+    <ul class="list-unstyled components">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="central-region.html">Central Region</a></li>
+      <li><a href="southern-region.html">Southern Region</a></li>
+      <li><a href="western-region.html">Western Region</a></li>
+      <li><a href="eastern-region.html">Eastern Region</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="main.html">Brochure</a></li>
+    </ul>
+  </nav>
+  <!-- End of Sidebar -->
+
+  <div class="download-brochure-container">
+
+    <section class="download-brochure-info">
+      <h1>Discover how Himma can help you explore the latest projects, initiatives, and investments under Vision 2030.
+      </h1>
+      <h4> Download our comprehensive brochure for detailed insights and case studies.</h4>
+      <ul>
+        <li>Key highlights and project summaries</li>
+        <li>Investment Opportunities</li>
+        <li>Saudi Future Initiatives</li>
+      </ul>
+    </section>
+
+    <section class="download-brochure-form">
+      <form id="brochureForm" action="#" method="POST" class="download-brochure-signup-form">
+        <div class="download-brochure-form-group">
+          <label for="firstName">First name <span>*</span></label>
+          <input type="text" id="firstName" name="firstName" required>
+          <span id="firstNameError" class="error-message"></span>
+        </div>
+
+        <div class="download-brochure-form-group">
+          <label for="lastName">Last name <span>*</span></label>
+          <input type="text" id="lastName" name="lastName" required>
+          <span id="lastNameError" class="error-message"></span>
+        </div>
+
+        <div class="download-brochure-form-group">
+          <label for="workEmail">Work email <span>*</span></label>
+          <input type="email" id="workEmail" name="workEmail" required>
+          <span id="emailError" class="error-message"></span>
+        </div>
+
+        <div class="download-brochure-form-group">
+          <label for="phoneNumber">Phone number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber">
+          <span id="phoneError" class="error-message"></span>
+        </div>
+
+        <div class="download-brochure-form-group">
+          <label for="companyName">Company name <span>*</span></label>
+          <input type="text" id="companyName" name="companyName" required>
+          <span id="companyError" class="error-message"></span>
+        </div>
+
+        <div class="download-brochure-form-group">
+          <label for="role">Role <span>*</span></label>
+          <input type="text" id="role" name="role" required>
+        </div>
+
+        <div class="form-group">
+          <label for="brochure">Choose a Brochure *</label>
+          <select id="brochure" name="brochure" required>
+            <option value="">-- Select --</option>
+            <option value="brochure1.pdf">Key highlights and project summaries</option>
+            <option value="brochure2.pdf">Investment Opportunities</option>
+            <option value="brochure3.pdf">Saudi Future Initiatives</option>
+          </select>
+        </div>
+      
+        <button type="submit">Submit</button>
+
+        <section id="confirmationMessage" style="display: none;">
+          <h2>Thank you, <span id="userName"></span>!</h2>
+          <p>Your brochure is ready for download.</p>
+          <a href="" id="downloadLink" download>Click here to download your brochure</a>
+        </section>
+      </form>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="brochure-sender.js"></script>
+  
+</body>
+
+</html>
