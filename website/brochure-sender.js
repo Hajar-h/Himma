@@ -1,3 +1,4 @@
+//Front-end validation
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('brochureForm');
 
