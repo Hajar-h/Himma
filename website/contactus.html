@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Himma</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/2030icon.png" type="image/x-icon"/>
+  <link rel="icon" href="assets/2030icon.png" type="image/x-icon" />
+  <script src="index.js" defer></script>
   <script src="contactus.js" defer></script>
 </head>
+
 <body>
   <header>
     <nav>
@@ -23,7 +26,9 @@
 
   <aside id="customSidebar" class="sidebar">
     <button id="closeSidebar" class="close-btn">&times;</button>
-    <div class="sidebar-header"><h3>Menu</h3></div>
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+    </div>
     <ul class="list-unstyled components">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a></li>
@@ -32,7 +37,7 @@
       <li><a href="western-region.html">Western Region</a></li>
       <li><a href="eastern-region.html">Eastern Region</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="main.html">Brochure</a></li>
+      <li><a href="brochure.html">Brochure</a></li>
     </ul>
   </aside>
 
@@ -61,7 +66,7 @@
 
           <div class="form-group">
             <label for="subject">* Subject</label>
-            <input type="text" id="subject" name="subject" required/>
+            <input type="text" id="subject" name="subject" required />
             <span class="error-message" id="subjectError"></span>
           </div>
 
@@ -85,19 +90,19 @@
 
           <div class="form-group">
             <label for="firstName">* First Name</label>
-            <input type="text" id="firstName" name="firstName" maxlength="25" required/>
+            <input type="text" id="firstName" name="firstName" maxlength="25" required />
             <span class="error-message" id="firstNameError"></span>
           </div>
 
           <div class="form-group">
             <label for="lastName">* Last Name</label>
-            <input type="text" id="lastName" name="lastName" maxlength="25" required/>
+            <input type="text" id="lastName" name="lastName" maxlength="25" required />
             <span class="error-message" id="lastNameError"></span>
           </div>
 
           <div class="form-group">
             <label for="dob">* Date of Birth</label>
-            <input type="date" id="dob" name="dob" required/>
+            <input type="date" id="dob" name="dob" required />
             <span class="error-message" id="dobError"></span>
           </div>
 
@@ -138,24 +143,24 @@
 
           <div class="form-group">
             <label for="company">* Company Name</label>
-            <input type="text" id="company" name="company" required/>
+            <input type="text" id="company" name="company" required />
             <span class="error-message" id="companyError"></span>
           </div>
 
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone"/>
+            <input type="text" id="phone" name="phone" />
             <span class="error-message" id="phoneError"></span>
           </div>
 
           <div class="form-group">
             <label for="email">* Email</label>
-            <input type="email" id="email" name="email" required/>
+            <input type="email" id="email" name="email" required />
             <span class="error-message" id="emailError"></span>
           </div>
 
           <div class="form-group recaptcha">
-            <input type="checkbox" id="notARobot" name="notARobot" required/>
+            <input type="checkbox" id="notARobot" name="notARobot" required />
             <label for="notARobot">I'm not a robot</label>
             <span class="error-message" id="robotError"></span>
           </div>
@@ -170,4 +175,5 @@
     </section>
   </main>
 </body>
+
 </html>
