@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         isValid = false;
       };
   
-      // Validate first name
+      
       const firstName = document.getElementById("firstName");
       if (!/^[A-Za-z]{2,25}$/.test(firstName.value)) {
         showError("firstNameError", "Only letters (2–25 characters) allowed.");
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         firstName.style.border = "2px solid green";
       }
   
-      // Validate last name
+      
       const lastName = document.getElementById("lastName");
       if (!/^[A-Za-z]{2,25}$/.test(lastName.value)) {
         showError("lastNameError", "Only letters (2–25 characters) allowed.");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         lastName.style.border = "2px solid green";
       }
   
-      // Validate email
+      
       const email = document.getElementById("email");
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(email.value)) {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         email.style.border = "2px solid green";
       }
   
-      // Validate phone number
+      
       const phone = document.getElementById("phone");
       if (phone.value && !/^\d{7,15}$/.test(phone.value)) {
         showError("phoneError", "Phone number must be 7–15 digits.");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         phone.style.border = phone.value ? "2px solid green" : "";
       }
   
-      // Validate message
+      
       const message = document.getElementById("message");
       if (message.value.trim() === "") {
         showError("messageError", "Message cannot be empty.");
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message.style.border = "2px solid green";
       }
   
-      // Validate company name
+      
       const company = document.getElementById("company");
       if (!/^[A-Za-z0-9\s]{2,50}$/.test(company.value.trim())) {
         showError("companyError", "Company name must be 2–50 characters, letters and numbers only.");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         company.style.border = "2px solid green";
       }
   
-      // Validate checkbox "I'm not a robot"
+      
       const notARobot = document.getElementById("notARobot");
       if (!notARobot.checked) {
         showError("robotError", "Please confirm you're not a robot.");
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // Handle message input for character count
+    //Handle message input for character count
     const messageField = document.getElementById("message");
     const note = document.querySelector(".note");
     messageField.addEventListener("input", () => {
